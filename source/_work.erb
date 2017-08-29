@@ -1,0 +1,21 @@
+<div class="Wrapper">
+  <ul class="image_grid">
+    <% blog.articles.each do |article| %>
+    <% if article.data.tags('new')  %>
+      <li class="new">
+    <% else %>
+      <li>
+    <% end %>
+      <a href="<%= article.url %>">
+        <%= image_tag 'work/' + article.data.images.first + '.jpg', :width => '550' %>
+        <div>
+          <p><%= article.title %></p>
+          <% if article.data.tags('new')  %>
+            <span class="new">New!</span>
+          <% end %>
+        </div>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+</div>

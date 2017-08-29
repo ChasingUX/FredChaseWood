@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Fred Chase Wood Craft" %></title>
+    <meta name="description" content="Fred Chase is a wood turner from Philadelphia, focusing on wood bowls, vessels, and forms.">
+    <meta name="keywords" content="Fred Chase, Wood turner, wood bowls, wood vessels, wood forms">
+
+    <meta name="twitter:card" content="Fred Chase is a wood turner from Philadelphia, focusing on wood bowls, vessels, and forms.">
+    <meta name="twitter:site" content="Fred Chase Wood Craft">
+    <meta name="twitter:title" content="Fred Chase Wood Craft">
+    <meta name="twitter:description" content="Fred Chase is a wood turner from Philadelphia, focusing on wood bowls, vessels, and forms.">
+
+    <meta name="og:title" content="Fred Chase Wood Craft">
+    <meta name="og:description" content="Fred Chase is a wood turner from Philadelphia, focusing on wood bowls, vessels, and forms.">
+    <meta name="og:site_name" content="Fred Chase Wood Craft">
+    <meta property="og:image" content='http://fredchasewoodcraft.com/<%= image_path "fred.jpg" %>'>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="292"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/manifest.json">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+    <%= stylesheet_link_tag "all" %>
+
+    <% if content_for?(:head) %>
+      <%= yield_content :head %>
+    <% end %>
+
+
+    <%= javascript_include_tag  "application" %>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  </head>
+  <body class="<%= page_classes %>">
+    <%= yield %>
+  </body>
+</html>

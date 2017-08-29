@@ -1,0 +1,13 @@
+<header class="Header-nav outerPadding">
+  <% link_to work_path, class: "Logo-link" do %>
+    <%= partial 'logo' %>
+  <% end %>
+
+  <nav>
+    <ul>
+      <li><%= active_link_to "Shop", work_path %></li>
+      <li><%= active_link_to "About", about_path %></li>
+      <li><%= link_to "Etsy", "https://www.etsy.com/se-en/shop/FredChaseWoodCraft" %></li>
+    </ul>
+  </nav>
+</header>

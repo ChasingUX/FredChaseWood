@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'GT Pressura';
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.eot');
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.eot?#iefix') format('embedded-opentype'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.woff') format('woff'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Pressura';
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.eot');
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.eot?#iefix') format('embedded-opentype'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.woff') format('woff'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+::-moz-selection {
+  background: $primary;
+  color: white;
+}
+
+::selection {
+  background: $primary;
+  color: white;
+}
+
+a.background {
+  background: $link_background;
+  display: inline-block;
+  padding: 0 6px;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  li {
+    display: inline-block;
+  }
+}
+
+
+h1 {
+  font-family: 'GT Pressura';
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 1px;
+
+  // @media (max-width: $large) {
+  //   font-size: 28px;
+  //   margin-bottom: 5px;
+  // }
+
+  @media (max-width: $medium) {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+}
