@@ -331,6 +331,13 @@ $slider-height: calc(100vh - #{$ws6});
         width: 100%;
         height: auto;
         border-radius: 4px;
+        opacity: 0;
+        will-change: opacity;
+        transition: opacity .6s ease;
+
+        &.is-visible {
+          opacity: 1;
+        }
       }
 
       div {
@@ -350,6 +357,9 @@ $slider-height: calc(100vh - #{$ws6});
 
       a {
         position: relative;
+
+
+
 
         &:before {
           content: '';

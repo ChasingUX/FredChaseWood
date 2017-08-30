@@ -39,7 +39,14 @@ $(function () {
   })
 
 
-  $(".image_grid img").unveil();
+
+  $(".image_grid img").unveil(300, function() {
+    var $thisImage = $(this)
+
+    $thisImage.load(function() {
+      $thisImage.addClass('is-visible');
+    });
+  });
 
     // sliderOn = true;
 
