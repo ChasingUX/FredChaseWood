@@ -221,8 +221,10 @@ $slider-height: calc(100vh - #{$ws6});
   }
 }
 
-.slick-list {
-  overflow-y: -webkit-paged-y!important;
+.index {
+  .slick-list {
+    overflow-y: -webkit-paged-y!important;
+  }
 }
 
 .work {
@@ -315,11 +317,10 @@ $slider-height: calc(100vh - #{$ws6});
     li {
       display: flex;
       padding: 10px;
-      width: 100%;
-      max-width: 50%;
+      width: 50%;
 
       @media (max-width: $medium) {
-        max-width: 100%;
+        width: 100%;
       }
 
       @media (max-width: $small) {
@@ -329,6 +330,7 @@ $slider-height: calc(100vh - #{$ws6});
       img {
         width: 100%;
         height: auto;
+        border-radius: 4px;
       }
 
       div {

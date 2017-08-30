@@ -7,7 +7,11 @@
       <li>
     <% end %>
       <a href="<%= article.url %>">
-        <%= image_tag 'work/' + article.data.images.first + '.jpg', :width => '550' %>
+        <%= image_tag 'bg.png', :class => "class", :data => { :src => 'assets/images/work/' + article.data.images.first + '.jpg', :width => '550' }  %>
+        <%#= image_tag entry.filename, :title => "title", :class => "class", :data => { :description => entry.caption, :title => entry.caption }  %>
+        <noscript>
+          <%= image_tag 'work/' + article.data.images.first + '.jpg', :width => '550' %>
+        </noscript>
         <div>
           <p><%= article.title %></p>
           <% if article.data.tags('new')  %>

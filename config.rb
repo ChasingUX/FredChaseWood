@@ -79,10 +79,12 @@ end
 #   activate :minify_javascript
 # end
 
+activate :autoprefixer
+
 configure :build do
-  activate :autoprefixer do |config|
-    config.browsers = ['last 20 versions']
-  end
+  # activate :autoprefixer do |config|
+  #   config.browsers = ['last 20 versions']
+  # end
   activate :minify_javascript
   activate :minify_css
   activate :asset_hash

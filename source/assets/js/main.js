@@ -38,6 +38,9 @@ $(function () {
     ]
   })
 
+
+  $(".image_grid img").unveil();
+
     // sliderOn = true;
 
   // $(window).on('resize', function () {
