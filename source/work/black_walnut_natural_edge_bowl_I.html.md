@@ -6,7 +6,7 @@ images:
 wood: "black walnut"
 type: "natural edge bowl"
 dimensions: "6” x  12” x 10 ½”"
-buy:
+buy: "https://www.etsy.com/se-en/"
 price: 150
 tags:
 date: 2016-6-04

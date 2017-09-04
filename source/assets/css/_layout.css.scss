@@ -24,9 +24,17 @@ body {
     padding: $padding_small;
   }
 
+  @media (max-width: $small) {
+    padding-top: 5px;
+  }
+
   &.Wrapper--wide {
     max-width: none;
     padding: $padding 0 0 0;
+
+    @media (min-width: $large) {
+      padding: 0;
+    }
   }
 }
 
@@ -34,7 +42,7 @@ body {
 .outerPadding {
   padding: $padding;
 
-  @media (max-width: $large) {
+  @media (max-width: $medium) {
     padding: $padding_small;
   }
 }
@@ -64,7 +72,7 @@ body {
         position: static;
         margin: 0 auto;
         display: block;
-        float: none;
+        // float: none;
       }
 
       .light {
@@ -94,12 +102,12 @@ body {
 }
 
 .Header-nav {
-  text-align: right;
   width: 100%;
   z-index: 2;
   position: relative;
   @media (max-width: $medium) {
     margin-top: 10px;
+    // height: 125px;
   }
 
   &:after {
@@ -114,12 +122,18 @@ body {
     }
   }
 
+  a {
+    display: inline-block;
 
+    @media (max-width: $medium) {
+      margin: 0 auto;
+      display: block!important;
+    }
+  }
 
   .logo{
     width: 154px;
     height: 92px;
-    float: left;
     @media (max-width: $medium) {
       margin: 0 auto;
       display: block;
@@ -133,11 +147,13 @@ body {
 
   nav {
     display: inline-block;
-    margin-top: 20px;
+    float: right;
+    margin-top: 25px;
 
     @media (max-width: $medium) {
       text-align: center;
       width: 100%;
+      float: none;
     }
 
     a {
@@ -396,14 +412,14 @@ $slider-height: calc(100vh - #{$ws6});
 }
 
 .piece_header {
-  margin: 34px auto 42px auto;
+  margin: 5px auto 40px auto;
   width: 100%;
   max-width: 1400px;
   text-align: center;
   clear: left;
 
   @media (max-width: $large) {
-    margin: 30px auto 45px auto;
+    margin: 0 auto 45px auto;
     padding: 0 $padding_small;
   }
 

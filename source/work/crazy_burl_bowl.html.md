@@ -3,12 +3,12 @@ title: "Crazy burl bowl"
 images:
   - 104A
   - 104B
-wood: "black walnut"
-type: "bowl"
+wood: "Undetermined"
+type: "Burl Bowl"
 dimensions: "3 ¼” x 6” x 6”"
 buy:
-price: 90
-tags: new
+price:
+tags:
 date: 2016-6-17
 ---
 

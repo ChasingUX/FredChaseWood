@@ -1,14 +1,14 @@
 ---
 title: "Cherry Bowl"
 images:
-  - 110A
-  - 110B
+  - 103A
+  - 103B
 wood: "Cherry"
-type: "bowl"
-dimensions: "2 ½” x 10” x 10”"
+type: "Bowl"
+dimensions:
 buy:
-price: 80
-tags: new
+price:
+tags:
 date: 2016-6-10
 ---
 

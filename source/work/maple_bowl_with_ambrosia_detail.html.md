@@ -1,13 +1,13 @@
 ---
 title: "Maple bowl with ambrosia detail"
 images:
-  - 134A
-  - 134B
+  - 101A
+  - 101B
 wood: "Maple"
-type: "bowl"
-dimensions: "3” x 5 ½” x 5 ½”"
-buy:
-price: 75
+type: "Bowl"
+dimensions: '3" x 5" x5"'
+buy: "https://www.etsy.com/se-en/listing/528919994/maple-bowl-with-ambrosia-detail?ref=shop_home_active_28"
+price: 100
 tags:
 date: 2016-6-24
 ---

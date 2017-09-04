@@ -26,7 +26,7 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: 36,
+    centerPadding: '36px',
     arrows: false,
     responsive: [
       {
@@ -66,3 +66,4 @@ $(function () {
 
 
 });
+

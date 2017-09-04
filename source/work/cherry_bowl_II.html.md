@@ -6,7 +6,7 @@ images:
 wood: "Cherry"
 type: "bowl"
 dimensions: "3 ½” x 8” x 8”"
-buy:
+buy: "https://www.etsy.com/se-en/"
 price: 100
 tags:
 date: 2016-6-11

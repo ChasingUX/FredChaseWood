@@ -6,7 +6,7 @@ images:
 wood: "Cherry"
 type: "vase"
 dimensions: "14 ½” x  8” x 8”"
-buy:
+buy: "https://www.etsy.com/se-en/"
 price: 400
 tags:
 date: 2016-6-23

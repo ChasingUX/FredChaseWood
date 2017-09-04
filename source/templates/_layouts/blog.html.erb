@@ -1,22 +1,22 @@
-<%= partial 'header' %>
+
 
 <% wrap_layout :layout do %>
+
+<%= partial 'header' %>
   <div class="Wrapper Wrapper--wide">
     <div class="piece_header">
       <h1><%= current_page.title %></h1>
       <ul>
-
         <% wood = current_page.data.wood %>
         <% type = current_page.data.type %>
         <% dimensions = current_page.data.dimensions %>
         <% price = current_page.data.price %>
         <% buy = current_page.data.buy %>
 
-
         <% if wood %><li><span>Wood:</span><%= wood %></li><% end %>
         <% if type %><li><span>Type:</span><%= type %></li><% end %>
         <% if dimensions %><li><span>Dimensions:</span><%= dimensions %></li><% end %>
-        <% if price %><li><span>Price:</span>$<%= price %><% if buy %><a class="buy" href="<%= buy %>"><span>Buy</span></a><% end %></li><% end %>
+        <li><span>Price:</span><% if price %>$<%= price %><% if buy %><a class="buy" href="<%= buy %>"><span>Buy</span></a><% end %><% else %>Sold<% end %></li>
       </ul>
 
       <!-- Posted <%#= current_page.date.strftime('%m-%e-%Y') %> -->

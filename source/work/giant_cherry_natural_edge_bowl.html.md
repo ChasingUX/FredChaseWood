@@ -6,7 +6,7 @@ images:
 wood: "Cherry"
 type: "Vessel"
 dimensions: "8 ¾” x 17 ½” x 15”"
-buy:
+buy: "https://www.etsy.com/se-en/"
 price: 500
 tags:
 date: 2016-6-21

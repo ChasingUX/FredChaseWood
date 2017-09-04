@@ -6,7 +6,7 @@ images:
 wood: "hickory"
 type: "bowl"
 dimensions: "12” x 7” x 2”"
-buy:
+buy: "https://www.etsy.com/se-en/"
 price: 75
 tags:
 date: 2016-6-22

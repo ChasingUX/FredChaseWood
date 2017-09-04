@@ -6,7 +6,7 @@ images:
 wood: "ash"
 type: "bowl"
 dimensions: "7 ½” x 19” x 19”"
-buy:
+buy: "https://www.etsy.com/se-en/"
 price: 450
 tags:
 date: 2016-5-25

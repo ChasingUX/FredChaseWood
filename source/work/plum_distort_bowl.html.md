@@ -3,12 +3,12 @@ title: "Plum distort bowl"
 images:
   - 105A
   - 105B
-wood: "plum"
-type: "bowl"
-dimensions: "3 ¾” x 6 ½” x 6 ¼”"
+wood: "Plum"
+type: "Bowl"
+dimensions:
 buy:
-price: 90
-tags: new
+price:
+tags:
 date: 2016-6-27
 ---
 
