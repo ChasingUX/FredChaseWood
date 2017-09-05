@@ -11,6 +11,6 @@ dimensions: '14" x 16"'
 buy: "https://www.etsy.com/se-en/listing/541495308/ash-bowl?ref=shop_home_active_5"
 price: 150
 tags:
-date: 2016-5-26
+date: 2016-6-13
 ---
 

@@ -18,27 +18,24 @@ $(function () {
     });
   }
 
-
   var slickSingle = $('.Slide-container-single');
 
   slickSingle.slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '36px',
+    centerPadding: '100px',
     arrows: false,
     responsive: [
       {
         breakpoint: 500,
         settings: {
-          centerPadding: 15,
+          centerPadding: '15px',
         }
       }
     ]
   })
-
-
 
   $(".image_grid img").unveil(300, function() {
     var $thisImage = $(this)
@@ -48,22 +45,21 @@ $(function () {
     });
   });
 
-    // sliderOn = true;
-
-  // $(window).on('resize', function () {
-  //   var currentWidth = $(window).width();
-
-  //   console.log(sliderOn)
-
-
-  //   if (currentWidth > 500) {
-  //     sliderOn = true;
-  //   } else {
-  //     sliderOn = false;
+  var Slider = $('.Slide-container-single');
+  // Slider.on('click', '.slick-slide', function (e) {
+  //   e.stopPropagation();
+  //   var index = $(this).index();
+  //   if (Slider.slick('slickCurrentSlide') !== index) {
+  //     $('.slick-slider').slick('slickGoTo', index);
   //   }
-  //   // Do something.
   // });
 
+   Slider.on('click', '.slick-slide', function (e) {
+    e.stopPropagation();
+    var index = $(this).data("slick-index");
+    if (Slider.slick('slickCurrentSlide') !== index) {
+      Slider.slick('slickGoTo', index);
+    }
+  });
 
 });
-

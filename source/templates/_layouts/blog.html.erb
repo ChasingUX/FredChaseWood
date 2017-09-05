@@ -16,7 +16,7 @@
         <% if wood %><li><span>Wood:</span><%= wood %></li><% end %>
         <% if type %><li><span>Type:</span><%= type %></li><% end %>
         <% if dimensions %><li><span>Dimensions:</span><%= dimensions %></li><% end %>
-        <li><span>Price:</span><% if price %>$<%= price %><% if buy %><a class="buy" href="<%= buy %>"><span>Buy</span></a><% end %><% else %>Sold<% end %></li>
+        <li><span>Price:</span><% if price %>$<%= price %><% if buy %><a class="buy" href="<%= buy %>" target="_blank"><span>Buy</span></a><% end %><% else %>Sold<% end %></li>
       </ul>
 
       <!-- Posted <%#= current_page.date.strftime('%m-%e-%Y') %> -->
@@ -24,7 +24,7 @@
 
     <div class="Slide-container-single">
       <% current_page.data.images.each do |f| %>
-        <div class="slide-single"><%= image_tag 'work/' + f + '.jpg', :width => '550' %></div>
+        <div class="slide-single"><div class="slide-inner"><%= image_tag 'work/' + f + '.jpg', :width => '550' %></div></div>
       <% end %>
     </div>
   </div>

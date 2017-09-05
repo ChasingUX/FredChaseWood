@@ -257,58 +257,56 @@ $slider-height: calc(100vh - #{$ws6});
   img {
     border-radius: 4px;
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 
     &:focus {
       outline: 0;
     }
   }
 
-  $smallPadding: 0 5px;
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      float: none;
+      opacity: .4;
+      will-change: opacity;
+      transition: opacity .5s ease .15s;
+
+      &.slick-current {
+        opacity: 1;
+      }
+    }
+  }
 
   .slide-single {
-    // width: 90vw;
     display: inline-block;
-    padding: 0 18px;
     height: auto;
-
-    // img {
-    //    @media (max-width: $small) {
-    //     padding: 0 8px;
-    //   }
-    // }
-
-    @media (max-width: $small) {
-      padding: $smallPadding;
-    }
-
-    &:first-of-type {
-      padding-left: 0;
-
-      @media (max-width: $small) {
-        padding: $smallPadding;
-      }
-    }
-
-    &:last-of-type {
-      padding-right: 0;
-
-      @media (max-width: $small) {
-        padding: $smallPadding;
-      }
-    }
 
     &:focus {
       outline: 0;
     }
 
-    // &:last-of-type {
-    //   margin-right: 0;
+    .slide-inner {
+      padding: 0 16px;
+      height: 100%;
+
+      @media (max-width: $small) {
+        padding: 0 8px;
+      }
+    }
+
+    // &:first-of-type {
+    //   .slide-inner {
+    //     padding: 0 16px 0 0;
+
+    //     @media (max-width: $small) {
+    //       padding: 0 8px 0 0;
+    //     }
+    //   }
     // }
   }
-
-  // .owl-stage {
-  //   left: -75px;
-  // }
 }
 
 .down {
@@ -411,7 +409,7 @@ $slider-height: calc(100vh - #{$ws6});
 }
 
 .piece_header {
-  margin: 5px auto 40px auto;
+  margin: 5px auto 45px auto;
   width: 100%;
   max-width: 1400px;
   text-align: center;
@@ -443,6 +441,13 @@ $slider-height: calc(100vh - #{$ws6});
     }
 
     .buy {
+
+      &:hover {
+        text-decoration: none;
+        span {
+          font-weight: bold;
+        }
+      }
 
       &:before {
         content: '|';
