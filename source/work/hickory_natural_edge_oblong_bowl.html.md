@@ -1,13 +1,14 @@
 ---
 title: "Hickory natural edge oblong bowl"
 images:
-  - 132A
-  - 132B
-wood: "hickory"
-type: "bowl"
-dimensions: "12” x 7” x 2”"
-buy: "https://www.etsy.com/se-en/"
-price: 75
+  - 108A
+  - 108B
+  - 108C
+wood: "Hickory"
+type: "Bowl"
+dimensions: '12" x 7" x 2"'
+buy: "https://www.etsy.com/se-en/listing/528931984/hickory-natural-edged-oblong-bowl?ref=shop_home_active_24"
+price: 90
 tags:
 date: 2016-6-22
 ---

@@ -5,9 +5,9 @@ images:
   - 123B
 wood: "Cherry"
 type: "Vessel"
-dimensions: "9” x 9” x 9”"
-buy: "https://www.etsy.com/se-en/"
-price: 100
+dimensions: '7" x 6"'
+buy: "https://www.etsy.com/se-en/listing/541491666/cherry-vessel-with-finial?ref=shop_home_active_8"
+price: 150
 tags:
 date: 2016-6-16
 ---
