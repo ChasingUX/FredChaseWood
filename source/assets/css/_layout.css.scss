@@ -211,7 +211,7 @@ $slider-height: calc(100vh - #{$ws6});
   position: absolute;
   top: 0;
   left: 0;
-  animation: kenBurns 15s linear;
+  // animation: kenBurns 15s linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
@@ -272,10 +272,19 @@ $slider-height: calc(100vh - #{$ws6});
       float: none;
       opacity: .4;
       will-change: opacity;
-      transition: opacity .5s ease .15s;
+      transition: opacity .5s ease .1s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .6;
+      }
 
       &.slick-current {
         opacity: 1;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -321,6 +330,34 @@ $slider-height: calc(100vh - #{$ws6});
   background-repeat: no-repeat;
   @media (min-width: $large) {
     background-image: image-url("down.svg");
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.filter {
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+  display: inline-block;
+}
+
+
+.tags_container {
+  li {
+    cursor: pointer;
+    color: $primary;
+    border-bottom: 1px solid transparent;
+    padding: 0 10px;
+
+    &:hover {
+
+    }
+
+    &.active {
+      border-bottom: 1px solid $primary;
+    }
   }
 }
 

@@ -1,10 +1,32 @@
-<div class="Wrapper">
+<div class="Wrapper center">
+
+  <!-- <a href="#" class="filter">Show: <span>Everything</span></a> -->
+
+  <ul class="tags_container"></ul>
+
+
+  <!-- <ul class="type">
+    <li><a href="#">Bowl</a></li>
+    <li><a href="#">Vase</a></li>
+    <li><a href="#">Platters</a></li>
+    <li><a href="#">Sculptures</a></li>
+    <li><a href="#">Hollowed vessel</a></li>
+  </ul>
+
+  <ul class="wood">
+    <li><a href="#">Bowl</a></li>
+    <li><a href="#">Vase</a></li>
+    <li><a href="#">Platters</a></li>
+    <li><a href="#">Sculptures</a></li>
+    <li><a href="#">Hollowed vessel</a></li>
+  </ul> -->
+
   <ul class="image_grid">
     <% blog.articles.each do |article| %>
     <% if article.data.tags('new')  %>
-      <li class="new">
+      <li class="new" data-type="<%= article.data.type %>" data-wood="<%= article.data.wood %>">
     <% else %>
-      <li>
+      <li data-type="<%= article.data.type %>" data-wood="<%= article.data.wood %>">
     <% end %>
       <a href="<%= article.url %>">
         <%= image_tag 'bg.png', :class => "class", :data => { :src => 'assets/images/work/' + article.data.images.first + '.jpg', :width => '550' }  %>

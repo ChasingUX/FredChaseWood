@@ -24,6 +24,7 @@ $(function () {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '100px',
+    speed: 600,
     arrows: false,
     responsive: [
       {
@@ -35,12 +36,28 @@ $(function () {
     ]
   })
 
-  $(".image_grid img").unveil(300, function() {
+  $(".image_grid img").unveil(1000, function() {
     var $thisImage = $(this)
 
     $thisImage.load(function() {
       $thisImage.addClass('is-visible');
     });
+  });
+
+  // $(".image_grid li").each(function(){
+
+  // });
+
+  $('.tags_container').tagSort({
+    items: '.image_grid li',
+    tagElement: 'li',
+    tagClassPrefix: false,
+    itemTagsView: false,
+    itemTagsSeperator: ' ',
+    itemTagsElement: false,
+    sortType: 'inclusive',
+    tagAttr: 'data-type',
+    fadeTime: 0
   });
 
   var Slider = $('.Slide-container-single');
