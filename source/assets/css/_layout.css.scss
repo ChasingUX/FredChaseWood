@@ -339,23 +339,26 @@ $slider-height: calc(100vh - #{$ws6});
 
 .filter {
   margin: 0 auto;
-  padding: 20px 0 40px 0;
   display: inline-block;
+  font-weight: bold;
 }
 
 
-.tags_container {
+.tagsort-tags-container {
+  margin-bottom: 20px;
+
   li {
     cursor: pointer;
     color: $primary;
     border-bottom: 1px solid transparent;
-    padding: 0 10px;
+    padding: 0 1px;
+    margin: 0 15px;
 
     &:hover {
 
     }
 
-    &.active {
+    &.tagsort-active {
       border-bottom: 1px solid $primary;
     }
   }
@@ -364,6 +367,7 @@ $slider-height: calc(100vh - #{$ws6});
 .image_grid {
   display: flex;
   flex-wrap: wrap;
+  min-height: 400px;
 
     li {
       display: flex;
@@ -408,6 +412,7 @@ $slider-height: calc(100vh - #{$ws6});
 
       a {
         position: relative;
+        display: inline-table;
 
         &:before {
           content: '';
