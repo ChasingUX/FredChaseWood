@@ -10,5 +10,6 @@ buy: "https://www.etsy.com/se-en/listing/542735351/cedar-vessel-form?ref=shop_ho
 price: 120
 tags:
 date: 2016-6-09
+description: "This gorgeously grained piece of cedar is so light it threatens to float up on its own. Very smooth and extremely thin-walled, it's a natural conversation piece that seems to create disbelief in whoever vies and holds it."
 ---
 

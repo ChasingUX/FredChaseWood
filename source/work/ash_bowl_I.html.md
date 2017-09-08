@@ -13,5 +13,6 @@ buy: "https://www.etsy.com/se-en/listing/542763307/ash-bowl?ref=shop_home_active
 price: 450
 tags:
 date: 2016-5-24
+description: "This ash bowl crosses the line between natural beauty and great functionality as a very large family salad bowl. Its delightful lines embrace the wonderful grain that swirls throughout. It also makes an assertive and striking statement as a stand alone piece of functional simple art."
 ---
 

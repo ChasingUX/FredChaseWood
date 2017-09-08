@@ -10,5 +10,6 @@ buy: "https://www.etsy.com/se-en/listing/541491666/cherry-vessel-with-finial?ref
 price: 150
 tags:
 date: 2016-6-16
+description: "This cherry vessel with a lid and finial has a unique shape, gorgeous grain and a matching finial."
 ---
 

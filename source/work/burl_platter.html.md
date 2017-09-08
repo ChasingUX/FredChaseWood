@@ -11,5 +11,6 @@ buy: "https://www.etsy.com/se-en/listing/542740403/cherry-burl-platter?ref=shop_
 price: 150
 tags:
 date: 2016-6-08
+description: "This is a dense cherry burl platter that is both functional and handsome. It is useful for serving dry food stuffs, fruit, or as a stand alone piece of art."
 ---
 

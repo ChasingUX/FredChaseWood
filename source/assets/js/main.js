@@ -78,4 +78,18 @@ $(function () {
       Slider.slick('slickGoTo', index);
     }
   });
+
+  $('.shop a').on('click', function(e){
+    if($('body').hasClass('index')) {
+      e.preventDefault();
+
+      var scrollTop     = $(window).scrollTop(),
+        elementOffset = $('.Wrapper--work').offset().top,
+        distance      = (elementOffset - scrollTop);
+
+        $('html, body').animate({
+            scrollTop: distance
+        });
+    }
+  });
 });

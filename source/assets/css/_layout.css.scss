@@ -451,11 +451,11 @@ $slider-height: calc(100vh - #{$ws6});
 }
 
 .piece_header {
-  margin: 5px auto 45px auto;
+  margin: 0 auto 45px auto;
   width: 100%;
-  max-width: 1400px;
-  text-align: center;
+  text-align: left;
   clear: left;
+  padding: 0 115px;
 
   @media (max-width: $large) {
     margin: 0 auto 45px auto;
@@ -466,12 +466,56 @@ $slider-height: calc(100vh - #{$ws6});
     margin: 0 auto 35px auto;
   }
 
+  p {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 21px;
+
+    &:before {
+      content: '';
+      width: 45px;
+      height: 1px;
+      background: #797979;
+      display: block;
+      margin: 0 0 27px 0;
+    }
+  }
+
+  .buy {
+    background: rgba(152, 152, 152, 0.00);
+    border: 1px solid black;
+    padding: 8px 19px;
+    font-size: 17px;
+    border-radius: 34px;
+    display: inline-block;
+    margin-top: 23px;
+    transition: background .3s ease;
+    will-change: background;
+
+    &:hover {
+      text-decoration: none;
+      background: rgba(152, 152, 152, 0.08);
+    }
+
+    span {
+      font-weight: bold;
+
+      b {
+        margin: 0 4px;
+      }
+    }
+  }
+
   ul {
     li {
       font-family: 'GT Pressura';
       font-weight: normal;
       font-size: 17px;
-      padding: 0 24px;
+      padding: 0 14px;
+
+      &:first-child {
+        padding-left: 0;
+      }
 
       @media (max-width: $large) {
         padding: 0 16px;
@@ -479,28 +523,6 @@ $slider-height: calc(100vh - #{$ws6});
 
       span {
         font-weight: bold;
-      }
-    }
-
-    .buy {
-
-      &:hover {
-        text-decoration: none;
-        span {
-          font-weight: bold;
-        }
-      }
-
-      &:before {
-        content: '|';
-        padding-left: 12px;
-        padding-right: 12px;
-        font-size: 18px;
-      }
-
-      span {
-        text-decoration: underline;
-        font-weight: normal;
       }
     }
   }

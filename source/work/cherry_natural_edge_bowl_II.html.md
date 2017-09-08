@@ -13,5 +13,6 @@ buy: "https://www.etsy.com/se-en/listing/541492838/natural-edge-cherry-bowl?ref=
 price: 150
 tags:
 date: 2016-6-14
+description: "This natural edge cherry bowl has very attractive sloping walls that rise and fall like the tides. It is an immediate attention grabber due to its special shape and contrasting grain color, and is food safe."
 ---
 

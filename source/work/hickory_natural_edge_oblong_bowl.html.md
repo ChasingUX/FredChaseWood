@@ -11,5 +11,6 @@ buy: "https://www.etsy.com/se-en/listing/528931984/hickory-natural-edged-oblong-
 price: 90
 tags:
 date: 2016-6-22
+description: "This darkly handsome oblong bowl is truly unusual, both in it's grain as well as its shape. It gently elevates its wings, while maintaining a many natural grain characteristics that shout out 'country!'"
 ---
 

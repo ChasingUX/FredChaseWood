@@ -10,5 +10,6 @@ buy: "https://www.etsy.com/se-en/listing/542752185/small-birch-calabash-vase?ref
 price: 125
 tags:
 date: 2016-6-01
+description: "This well turned calabash shaped vase has subtle grain markings. Very smooth to the touch, it will fit nicely on a shelf to add beauty to any room."
 ---
 

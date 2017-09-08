@@ -10,5 +10,6 @@ buy: "https://www.etsy.com/se-en/listing/528926754/black-walnut-natural-edge-bow
 price: 75
 tags:
 date: 2016-6-05
+description: "This natural edge bowl has dramatic upswept wings on two sides that graduate into two lower sides. It would look gorgeous holding pieces of fruit or colorful objects."
 ---
 

@@ -10,5 +10,6 @@ buy: "https://www.etsy.com/se-en/listing/528923580/hollowed-maple-vessel?ref=sho
 price: 60
 tags:
 date: 2016-6-19
+description: "This is a hollowed form made of elm wood. Very light to hold, it has a very pleasant shape, delightful grain, and an overall sweetness to its character."
 ---
 

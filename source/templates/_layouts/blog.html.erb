@@ -10,12 +10,17 @@
         <% dimensions = current_page.data.dimensions %>
         <% price = current_page.data.price %>
         <% buy = current_page.data.buy %>
+        <% description = current_page.data.description %>
 
         <% if wood %><li><span>Wood:</span><%= wood %></li><% end %>
         <% if type %><li><span>Type:</span><%= type %></li><% end %>
         <% if dimensions %><li><span>Dimensions:</span><%= dimensions %></li><% end %>
-        <li><span>Price:</span><% if price %>$<%= price %><% if buy %><a class="buy" href="<%= buy %>" target="_blank"><span>Buy</span></a><% end %><% else %>Sold<% end %></li>
+        <% if !price %><li><span>SOLD</span></li><% end %>
       </ul>
+
+      <% if description %><p><%= description %></p><% end %>
+
+      <% if price %><% if buy %><a class="buy" href="<%= buy %>" target="_blank"><span>Buy<b>·</b>$<%= price %></span></a><% end %><% end %>
 
       <!-- Posted <%#= current_page.date.strftime('%m-%e-%Y') %> -->
     </div>

@@ -10,5 +10,6 @@ buy: "https://www.etsy.com/se-en/listing/465558724/spalted-maple-bowl?ref=shop_h
 price: 140
 tags: new
 date: 2016-5-21
+description: "This 12 inch maple bowl, with a wide rim has many exciting and unique features in it, including some spalting and unexpected grain patterns. Food-safe, it can be used functionally or as an adornment to any living space"
 ---
 

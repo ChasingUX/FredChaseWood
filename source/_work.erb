@@ -1,4 +1,4 @@
-<div class="Wrapper center">
+<div class="Wrapper center Wrapper--work">
 
   <a href="#" class="filter">Show:</a>
 
@@ -9,15 +9,16 @@
   <ul class="image_grid">
     <% blog.articles.each do |article| %>
     <% if article.data.tags('new')  %>
-      <li class="new" data-item-tags="<%= article.data.type %>s">
+      <li class="new" data-item-tags="<%= article.data.type %>s" data-status="<% if article.data.price %>for_sale<% else %>sold<% end %>">
     <% else %>
-      <li data-item-tags="<%= article.data.type %>s">
+      <li data-item-tags="<%= article.data.type %>s" data-status="<% if article.data.price %>for_sale<% else %>sold<% end %>">
     <% end %>
       <a href="<%= article.url %>">
-        <%= image_tag 'bg.png', :class => "class", :data => { :src => 'assets/images/work/' + article.data.images.first + '.jpg', :width => '550' }  %>
+
+        <%= image_tag 'bg.png', :class => "class", :data => { :src => 'assets/images/work/' + article.data.images.first + '.jpg'} %>
         <%#= image_tag entry.filename, :title => "title", :class => "class", :data => { :description => entry.caption, :title => entry.caption }  %>
         <noscript>
-          <%= image_tag 'work/' + article.data.images.first + '.jpg', :width => '550' %>
+          <%= image_tag 'work/' + article.data.images.first + '.jpg' %>
         </noscript>
         <div>
           <p><%= article.title %></p>
