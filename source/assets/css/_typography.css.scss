@@ -55,17 +55,17 @@ ul {
 h1 {
   font-family: 'GT Pressura';
   font-weight: normal;
-  font-size: 32px;
-  margin-bottom: 1px;
+  font-size: 28px;
+  margin-bottom: 14px;
+  line-height: 1.2;
 
-  // @media (max-width: $large) {
-  //   font-size: 28px;
-  //   margin-bottom: 5px;
-  // }
+  @media (max-width: $xlarge) {
+    text-align: center;
+  }
 
   @media (max-width: $medium) {
-    font-size: 28px;
     margin-bottom: 15px;
-    line-height: 1.2;
+    font-size: 26px;
+    line-height: 1.3;
   }
 }

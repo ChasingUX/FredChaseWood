@@ -31,16 +31,26 @@ body {
   &.Wrapper--wide {
     max-width: none;
     padding: $padding 0 0 0;
+    position: relative;
 
     @media (min-width: $large) {
       padding: 0;
+    }
+
+    @media (min-width: $small) {
+      padding: 10px 0 0 0;
+    }
+
+    @media (max-width: $medium) {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
 
 
 .outerPadding {
-  padding: $padding;
+  padding: 30px 30px 15px 30px;
 
   @media (max-width: $medium) {
     padding: $padding_small;
@@ -72,7 +82,11 @@ body {
         position: static;
         margin: 0 auto;
         display: block;
-        // float: none;
+      }
+
+      @media (max-width: $small) {
+        width: 124px;
+        height: 74px;
       }
 
       .light {
@@ -107,7 +121,10 @@ body {
   position: relative;
   @media (max-width: $medium) {
     margin-top: 10px;
-    // height: 125px;
+  }
+
+  @media (max-width: $small) {
+    margin-top: 5px;
   }
 
   &:after {
@@ -119,6 +136,11 @@ body {
 
     @media (max-width: $medium) {
       display: block;
+    }
+
+    @media (max-width: $small) {
+      margin: 25px auto 0 auto;
+      width: 60px;
     }
   }
 
@@ -156,6 +178,10 @@ body {
       float: none;
     }
 
+    @media (max-width: $small) {
+      margin-top: 21px;
+    }
+
     a {
 
       &.active {
@@ -168,9 +194,7 @@ body {
         margin-right: $ws5;
 
         &:last-child {
-          @media (max-width: $medium) {
-            margin-right: 0;
-          }
+          margin-right: 0;
         }
       }
     }
@@ -254,6 +278,16 @@ $slider-height: calc(100vh - #{$ws6});
 }
 
 .Slide-container-single {
+  margin-top: 10px;
+  width: calc(100% - 200px);
+  float: right;
+
+  @media (max-width: $xlarge) {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
   img {
     border-radius: 4px;
     width: 100%;
@@ -301,20 +335,14 @@ $slider-height: calc(100vh - #{$ws6});
       padding: 0 16px;
       height: 100%;
 
+      @media (max-width: $medium) {
+        padding: 0 12px;
+      }
+
       @media (max-width: $small) {
         padding: 0 8px;
       }
     }
-
-    // &:first-of-type {
-    //   .slide-inner {
-    //     padding: 0 16px 0 0;
-
-    //     @media (max-width: $small) {
-    //       padding: 0 8px 0 0;
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -341,11 +369,25 @@ $slider-height: calc(100vh - #{$ws6});
   margin: 0 auto;
   display: inline-block;
   font-weight: bold;
+
+  @media (max-width: $small) {
+    display: none;
+  }
 }
 
 
 .tagsort-tags-container {
   margin-bottom: 20px;
+    @media (max-width: $small) {
+      text-align: left;
+      display: flex;
+      width: calc(100% + 30px);
+      overflow-x: scroll;
+      position: relative;
+      left: -15px;
+      padding: 0 15px;
+      margin-top: 5px;
+    }
 
   li {
     cursor: pointer;
@@ -354,12 +396,25 @@ $slider-height: calc(100vh - #{$ws6});
     padding: 0 1px;
     margin: 0 15px;
 
-    &:hover {
-
+    @media (max-width: $small) {
+      border: 1px solid #afafaf;
+      border-radius: 3px;
+      padding: 2px 9px;
+      margin: 0 5px 0 0;
+      font-size: 14px;
+      display: inline-block;
+      white-space: pre;
+      font-weight: bold;
     }
 
     &.tagsort-active {
       border-bottom: 1px solid $primary;
+
+      @media (max-width: $small) {
+        border: 1px solid $primary;
+        background: $primary;
+        color: white;
+      }
     }
   }
 }
@@ -450,34 +505,75 @@ $slider-height: calc(100vh - #{$ws6});
     }
 }
 
+h1.mobile{
+  display: none;
+  margin-bottom: 26px;
+  padding: 0 25px;
+
+  @media (max-width: $medium) {
+    display: block;
+  }
+}
+
 .piece_header {
-  margin: 0 auto 45px auto;
-  width: 100%;
+  margin: 0 auto;
+  width: 365px;
   text-align: left;
   clear: left;
-  padding: 0 115px;
+  top: 0;
+  bottom: 0;
+  padding: 25px 37px 0 47px;
+  position: absolute;
+  z-index: 1;
+  background: #fefcf8;
+  border-radius: 0;
 
-  @media (max-width: $large) {
+  @media (max-width: $xlarge) {
+    position: static;
     margin: 0 auto 45px auto;
-    padding: 0 $padding_small;
+    width: 100%;
+    padding: 0 115px;
+    text-align: center;
   }
 
   @media (max-width: $medium) {
-    margin: 0 auto 35px auto;
+    padding: 0 40px;
+    order: 2;
+    margin-top: 30px;
+  }
+
+  @media (max-width: $small) {
+    padding: 0 25px;
+
+  }
+
+  h1 {
+    @media (max-width: $medium) {
+      display: none;
+    }
   }
 
   p {
     width: 100%;
     max-width: 600px;
-    margin-top: 21px;
+    margin-top: 35px;
+
+    @media (max-width: $xlarge) {
+      text-align: center;
+      margin: 25px auto 0 auto;
+    }
 
     &:before {
       content: '';
       width: 45px;
       height: 1px;
-      background: #797979;
+      background: #a7a7a7;
       display: block;
       margin: 0 0 27px 0;
+
+      @media (max-width: $xlarge) {
+        display: none;
+      }
     }
   }
 
@@ -488,9 +584,18 @@ $slider-height: calc(100vh - #{$ws6});
     font-size: 17px;
     border-radius: 34px;
     display: inline-block;
-    margin-top: 23px;
+    margin-top: 30px;
     transition: background .3s ease;
     will-change: background;
+
+    @media (max-width: $xlarge) {
+      border: 0;
+      padding: 0;
+      border-bottom: 1px solid;
+      border-radius: 0;
+      margin: 15px auto 0 auto;
+      display: table;
+    }
 
     &:hover {
       text-decoration: none;
@@ -507,22 +612,38 @@ $slider-height: calc(100vh - #{$ws6});
   }
 
   ul {
+    @media (max-width: $xlarge) {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media (max-width: $large) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     li {
       font-family: 'GT Pressura';
       font-weight: normal;
       font-size: 17px;
-      padding: 0 14px;
+      padding-right: 25px;
 
-      &:first-child {
-        padding-left: 0;
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @media (max-width: $xlarge) {
+        display: inline-block;
       }
 
       @media (max-width: $large) {
-        padding: 0 16px;
+        padding: 0 17px;
       }
 
       span {
         font-weight: bold;
+        margin-right: 4px;
       }
     }
   }
