@@ -95,4 +95,10 @@ $(function () {
         });
     }
   });
+
+  // $('.image_grid li').each( function(){
+  //   if($(this).data('status') == 'for_sale'){
+  //     $(this).hide();
+  //   }
+  // })
 });

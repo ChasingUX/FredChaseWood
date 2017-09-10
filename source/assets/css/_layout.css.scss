@@ -387,6 +387,12 @@ $slider-height: calc(100vh - #{$ws6});
       left: -15px;
       padding: 0 15px;
       margin-top: 5px;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+        height: 0;
+        background: transparent;
+      }
     }
 
   li {
@@ -401,10 +407,9 @@ $slider-height: calc(100vh - #{$ws6});
       border-radius: 3px;
       padding: 2px 9px;
       margin: 0 5px 0 0;
-      font-size: 14px;
+      font-size: 15px;
       display: inline-block;
       white-space: pre;
-      font-weight: bold;
     }
 
     &.tagsort-active {
@@ -486,11 +491,7 @@ $slider-height: calc(100vh - #{$ws6});
           z-index: 10;
 
           @media (max-width: $medium) {
-            bottom: -20px;
-          }
-
-          @media (max-width: $small) {
-            bottom: -10px;
+            bottom: 32px;
           }
         }
 
