@@ -36,7 +36,7 @@ $(function () {
     ]
   })
 
-  $(".image_grid img").unveil(1000, function() {
+  $(".image_grid img").unveil(1500, function() {
     var $thisImage = $(this)
 
     $thisImage.load(function() {
