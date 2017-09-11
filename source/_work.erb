@@ -15,10 +15,9 @@
     <% end %>
       <a href="<%= article.url %>">
 
-        <%= image_tag 'bg.png', :class => "class", :data => { :src => 'assets/images/work/' + article.data.images.first + '.jpg'} %>
-        <%#= image_tag entry.filename, :title => "title", :class => "class", :data => { :description => entry.caption, :title => entry.caption }  %>
+        <%= image_tag 'bg.png', :class => "class", :data => { :src => 'assets/images/work/small/' + article.data.images.first + '.jpg'} %>
         <noscript>
-          <%= image_tag 'work/' + article.data.images.first + '.jpg' %>
+          <%= image_tag 'assets/images/work/small/' + article.data.images.first + '.jpg' %>
         </noscript>
         <div>
           <p><%= article.title %></p>
