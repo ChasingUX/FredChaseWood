@@ -39,7 +39,7 @@ $(function () {
       {
         breakpoint: 500,
         settings: {
-          centerPadding: '15px',
+          centerPadding: '25px',
         }
       }
     ]

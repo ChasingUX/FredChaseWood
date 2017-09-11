@@ -140,7 +140,9 @@ body {
 
     @media (max-width: $small) {
       margin: 25px auto 0 auto;
-      width: 60px;
+      width: calc(100% + 30px);
+      left: -15px;
+      position: relative;
     }
   }
 
@@ -160,6 +162,11 @@ body {
       margin: 0 auto;
       display: block;
       float: none;
+    }
+
+    @media (max-width: $small) {
+      width: 124px;
+      height: 74px;
     }
 
     .light {
@@ -407,10 +414,7 @@ $slider-height: calc(100vh - #{$ws6});
     margin: 0 15px;
 
     @media (max-width: $small) {
-      border: 1px solid #afafaf;
-      border-radius: 3px;
-      padding: 2px 9px;
-      margin: 0 5px 0 0;
+      margin: 0 20px 0 0;
       font-size: 15px;
       display: inline-block;
       white-space: pre;
@@ -420,9 +424,7 @@ $slider-height: calc(100vh - #{$ws6});
       border-bottom: 1px solid $primary;
 
       @media (max-width: $small) {
-        border: 1px solid $primary;
-        background: $primary;
-        color: white;
+        font-weight: bold;
       }
     }
   }
